@@ -1,0 +1,476 @@
+/*--------------------------------------------------------------------------
+	Body
+--------------------------------------------------------------------------*/
+
+body {
+	color: #333;
+	background: #fff;
+	font: 14px/22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+/*--------------------------------------------------------------------------
+	Typography
+--------------------------------------------------------------------------*/
+
+/* Headings Default */
+h1 { font-size: 17px; line-height: 20px; font-weight: bold; }
+h2 { font-size: 18px; line-height: 27px; }
+h3 { font-size: 14px; line-height: 22px; }
+h4 { font-size: 13px; line-height: 23px; }
+h6 { font-size: 12px; line-height: 14px; }
+
+/* Links */
+a, a:visited { color: #333; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+
+
+/* Highlighted Text */
+::selection { 
+	background: #993333; 
+	color:#fff; 
+	text-shadow: none; 
+}
+
+/* Firefox */
+::-moz-selection { 
+	background: #993333; 
+	color:#fff; 
+	text-shadow: none; 
+}
+
+em, .italic { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+
+.font-color-primary {
+	color: #993333;
+}
+
+.font-color-gray {
+	color: #bbb;
+}
+
+.font-color-black {
+	color: #111;
+}
+
+/*--------------------------------------------------------------------------
+	Page Sections
+--------------------------------------------------------------------------*/
+
+a {
+	transition: all 0.2s linear;
+}
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	font: normal 300 14px/24px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 20px; 
+}
+
+h5 { 
+	font: normal 11px/21px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+/*---------------------------------------------------
+	Topbar
+---------------------------------------------------*/
+
+	#section-topbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10000;
+		overflow: visible;
+		font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	#section-topbar a {
+	  color: #fff;
+	}
+
+	#topbar-inner {
+		background: #111;
+		line-height: 0;
+		text-align: center;
+	}
+
+	/*
+		Top Bar
+
+		By default, top navigation bar uses "fixed" position
+	*/
+	#section-topbar ul#nav {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+
+		border-right: 1px solid #222;
+		width: 100%;
+		display: table;
+		table-layout: fixed;
+
+		/* For IE, the outcast */
+		zoom:1;
+		*display: inline;
+	}
+
+	#section-topbar ul#nav > li {
+		display: block;
+        padding: 0;
+        display: table-cell;
+	  	border-left: 1px solid #222;
+	}
+
+
+	#section-topbar ul#nav a {
+	  display: block;
+	  font: normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  text-decoration: none;
+	  padding: 18px 0;
+	}
+
+		#section-topbar ul#nav a:hover {
+		  background: #222;
+		  text-decoration: none;
+		}
+
+		#section-topbar ul#nav .active a {
+			background: #006666;
+		}
+
+			#section-topbar ul#nav .active a:hover {
+				background: #006666;
+			}
+
+/*---------------------------------------------------
+	Header
+---------------------------------------------------*/
+
+	#section-intro {
+	}
+
+		/* Profile Image (Full background) */
+		#section-profileImage  {
+			background: #222 url('../images/profile_main.jpg') no-repeat center center;
+			background-size: cover;
+			background-position: 10% 0%;
+			height: 440px;
+		}
+
+			#section-profileImage #box-name {
+				color: #333;
+				font-size: 16px;
+				line-height: 26px;
+				margin-top: 180px;
+				text-align: center;
+			}
+
+				#section-profileImage #box-name h2 {
+					color: #fff;
+					font: normal bold 36px/46px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					letter-spacing: 3px;
+					text-transform: uppercase;
+				}
+
+
+				#section-profileImage #box-name p {
+					color: #fff;
+					font: normal 300 14px/24px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					margin-top: 10px;
+				}
+
+				#section-profileImage #box-name a {
+					color: #fff;
+				}
+
+					#section-profileImage #box-name a:hover {
+						color: #993333;
+					}
+
+		/* About */
+		#section-about {
+			color: #fff;
+			background: #993333;
+			padding: 40px 0;
+			font: normal 14px/24px 'PT Serif', Georgia, serif;
+		}
+
+			#section-about h3 span.underline {
+				padding-bottom: 3px;
+				border-bottom: 1px solid #fff;
+			}
+
+			p.intro {
+				color: #fff;
+				font: normal 15px/29px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+			a.link-twitter, a.link-github {
+				color: #fff;
+				font: normal 11px/21px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				display: block;
+				padding: 8px 0 8px 40px;
+				margin-bottom: 10px;
+			}
+
+			a.link-twitter {
+				background: url('../images/icons/icon_twitter.png') no-repeat left center;
+			}
+
+			a.link-github {
+				background: url('../images/icons/icon_works.png') no-repeat left center;
+			}
+
+			a:hover.link-twitter, a:hover.link-github {
+				color: #aaa;
+			}
+
+/*---------------------------------------------------
+		Writing
+---------------------------------------------------*/
+	
+	#section-writing {
+		color: #666;
+		background: #fff;
+		font: normal 14px/24px 'PT Serif', Georgia, serif;
+		padding: 20px 0;
+	}
+	
+		#section-writing .section-title {
+			color: #993333;
+			padding: 50px 0;
+			display: none;
+		}
+
+		#section-writing h2 {
+			color: #993333;
+		}
+
+		#section-writing h3 {
+			color: #333;
+			font: normal 300 14px/24px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding-top: 16px;
+			text-transform: uppercase;
+		}
+
+			#section-writing h3.no-padding {
+				padding: 0;
+			}
+
+
+			#section-writing h3 span.underline, #section-works h3 span.underline {
+				padding-bottom: 3px;
+				border-bottom: 1px solid #777;
+			}
+
+		#section-writing h5 {
+			color: #666;
+		}
+
+			#section-writing h5+p {
+				margin-bottom: 15px;
+			}
+
+		#section-writing img.profile-image {
+
+		}
+		
+		#section-writing .block {
+			margin-bottom: 20px;
+		}
+
+			#section-writing .block.last {
+				margin-bottom: 0px;
+			}
+
+		#section-writing #box-profile a.link-email,
+		#section-writing #box-profile a.link-phone {
+			color: #666;
+			font: normal 16px/26px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+			#section-writing #box-profile a.link-email:hover,
+			#section-writing #box-profile a.link-phone:hover {
+				color: #993333;
+			}
+
+		#section-writing .item {
+			margin-bottom: 10px;
+		}
+		
+			#section-writing .item > div {
+				padding-top: 15px;
+			}
+
+				#section-writing .item.no-border > div,
+				#section-writing .item > div.no-border { 
+					border-top: none;
+				}
+			
+			#section-writing .item h4, #section-writing .item h4 a {
+				color: #993333;
+				font: normal 17px/27px 'PT Serif', Georgia, serif;
+			}
+
+			#section-writing .item h4 a:hover {
+				color: #006666;
+			}
+		
+			#section-writing .item div h4 + p {
+				color: #666;
+				font: normal 15px/25px 'PT Serif', Georgia, serif;
+				margin-top: 0;
+			}
+
+			#section-writing .item div p.desc {
+				color: #666;
+				font: normal 14px/24px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin-top: 15px;
+			}
+			
+			#section-writing .item div > p.date {
+				color: #444;
+				font: normal 14px/24px 'PT Serif', Georgia, serif;
+			}
+			
+			span.label {
+				display: inline-block;
+				color: #ccc;
+				background: #111;
+				padding: 4px 8px;
+				margin-top: 6px;
+				font: normal 10px/20px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			span.label a {
+				color: #ccc;
+			}
+
+			span.label a:hover {
+				color: #993333;
+			}
+
+/*---------------------------------------------------
+	Projects
+---------------------------------------------------*/
+	
+	#section-works {
+		color: #222;
+		background: #f5f5f5;
+		font: normal 14px/24px 'PT Serif', Georgia, serif;
+		padding: 60px 0;
+	}
+
+		#section-works .item {
+			color: #333;
+			background: #fff;
+			margin-bottom: 40px;
+		}
+
+			#section-works .item.last {
+				margin-bottom: 0px;
+			}
+
+			#section-works a:hover .item {
+
+			}
+
+		#section-works .img-wrap {
+			background: #000;
+			line-height: 0;
+			position: relative;
+		}
+
+			#section-works .item .work-info {
+				margin: 25px 40px 20px 0;
+			}
+
+				#section-works .item span.category {
+					color: #993333;
+					font: normal 12px/22px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+
+				#section-works .item h4 {
+					font-size: 17px;
+					line-height: 25px;
+					margin: 0px 0 15px 0;
+				}
+
+					#section-works a:hover .item h4 {
+						color: #333;
+					}
+
+				#section-works .item p {
+					color: #666;
+					font: normal 14px/24px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+					margin-top: 15px;
+				}
+
+					#section-works a:hover .item p {
+						color: #777;
+					}
+
+/*---------------------------------------------------
+	Footer
+---------------------------------------------------*/
+
+	#section-footer {
+		color: #777;
+		background: #111;
+		font: normal 13px/23px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+		#section-footer p {
+			margin-top: 32px;
+		}
+
+		#section-footer a { color: #fff; }
+
+		#section-footer a:hover { color: #993333; }
+
+
+		#section-footer ul#social {
+			float: right;
+			border-left: 1px solid #111;
+		}
+
+		#section-footer ul#social li {
+			display: inline-block;
+			float: left;
+		}
+
+		#section-footer ul#social li a {
+			display: block;
+			line-height: 0;
+			padding: 30px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			#section-footer ul#social li a {
+				background: #006666;
+			}
+		}
+
+		#section-footer ul#social li a:hover {
+			background: #006666;
+		}

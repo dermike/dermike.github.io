@@ -1,0 +1,26 @@
+{
+  "name": "librarian.codes",
+  "version": "0.1.0",
+  "description": "librarian.codes",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dermike/dermike.github.io.git"
+  },
+  "author": "Mikael Jergefelt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dermike/dermike.github.io/issues"
+  },
+  "homepage": "https://github.com/dermike/dermike.github.io",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-concat-css": "^0.1.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1"
+  }
+}
