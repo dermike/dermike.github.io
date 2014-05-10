@@ -69,7 +69,7 @@
 	#section-works {
 		color: #222;
 		background: #f5f5f5;
-		font: normal 16px/26px 'PT Serif', Georgia, serif;
+		font: normal 14px/24px 'PT Serif', Georgia, serif;
 		padding: 60px 0;
 	}
 
@@ -114,60 +114,6 @@
 					#section-works a:hover .item p {
 						color: #777;
 					}
-
-
-		.reveal-modal {
-			margin-left: -300px;
-			width: 600px;
-		}
-
-			.reveal-modal .box-modal {
-				padding: 10px 15px 15px 15px;
-			}
-
-				.reveal-modal .box-modal h4 {
-					font: normal 13px/21px 'PT Serif', Georgia, serif;
-					margin-bottom: 10px;
-				}
-
-				.reveal-modal .box-modal p {
-					font: normal 11px/21px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-				}
-
-			.reveal-modal a.link-details,
-			.reveal-modal a.close-reveal-modal {
-				padding: 10px 15px;
-			}
-
-		#section-contact input, 
-		#section-contact textarea, 
-		#section-contact select { 
-			width: 260px;
-		}
-
-		#section-contact label.placeholder {
-			display: none;
-		}
-
-        /* Adjust footer social media menu */
-        #section-footer ul#social {
-            float: none;
-        }
-
-	        #section-footer p {
-	            margin: 40px 0 39px 0;
-	        }
-
-            #section-footer ul#social li a {
-                border-right: none;
-                margin-right: 1px;
-                padding: 15px;
-                margin-top: 1px;
-            }
-
-            #section-footer ul#social li a img {
-                width: 16px;
-            }
     }
 
 
