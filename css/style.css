@@ -231,10 +231,12 @@ h5 {
 
 			a.link-twitter {
 				background: url('../images/icons/icon_twitter.png') no-repeat left center;
+				background-size: 25px;
 			}
 
 			a.link-github {
 				background: url('../images/icons/icon_works.png') no-repeat left center;
+				background-size: 25px;
 			}
 
 			a:hover.link-twitter, a:hover.link-github {
@@ -463,6 +465,10 @@ h5 {
 			display: block;
 			line-height: 0;
 			padding: 30px;
+		}
+
+		#section-footer ul#social li a img {
+			width: 25px;
 		}
 
 		@media only screen and (max-width: 767px) {
