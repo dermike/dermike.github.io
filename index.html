@@ -48,9 +48,9 @@
       <div id="section-profileImage">
         <div class="container">
           <div class="sixteen columns">
-            <div id="box-name">
-              <h2>Mikael Jergefelt</h2>
-              <p>Librarian &amp; Web Developer <span class="font-color-primary"><b>/</b></span> <a href="mailto:mike@redvolume.com" class="link-email">mike@redvolume.com</a></p>
+            <div id="box-name" vocab="http://schema.org" resource="#mike" typeof="Person">
+              <h2><span property="givenName">Mikael</span> <span property="familyName">Jergefelt</span></h2>
+              <p><span property="jobTitle">Librarian</span> &amp; <span property="jobTitle">Web Developer</span> <span class="font-color-primary"><b>/</b></span> <a href="mailto:mike@redvolume.com" property="email" class="link-email">mike@redvolume.com</a></p>
             </div>
           </div>
           <div class="clear"></div>
@@ -64,7 +64,7 @@
           </div>
 
           <div class="nine columns">
-            <p class="intro">I'm Mike, a medical librarian working at Karolinska Institutet. I try to create the best customer experiences possible, both physical and virtual, using humour, friendliness, web technologies and good design.</p>
+            <p class="intro">I'm Mike, a medical librarian working at <span resource="#mike"><span vocab="http://schema.org" typeof="Organization" property="worksFor"><span property="name">Karolinska Institutet</span></span></span>. I try to create the best customer experiences possible, both physical and virtual, using humour, friendliness, web technologies and good design.</p>
           </div>
 
           <div class="four columns">
