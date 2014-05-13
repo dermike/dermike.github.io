@@ -30,7 +30,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body data-spy="scroll" data-target="#section-topbar" data-offset="60" vocab="http://schema.org" typeof="WebPage">
+  <body data-spy="scroll" data-target="#section-topbar" data-offset="60" vocab="http://schema.org" resource="#mike" typeof="Person">
+    <meta property="url" content="http://librarian.codes" />
 
     <div id="section-topbar">
       <div id="topbar-inner">
@@ -48,7 +49,7 @@
       <div id="section-profileImage">
         <div class="container">
           <div class="sixteen columns">
-            <div id="box-name" property="author" resource="#mike" typeof="Person">
+            <div id="box-name">
               <h2><span property="name"><span property="givenName">Mikael</span> <span property="familyName">Jergefelt</span></span></h2>
               <p><span property="jobTitle">Librarian</span> &amp; <span property="jobTitle">Web Developer</span> <span class="font-color-primary"><b>/</b></span> <a href="mailto:mike@redvolume.com" property="email" class="link-email">mike@redvolume.com</a></p>
             </div>
@@ -64,7 +65,7 @@
           </div>
 
           <div class="nine columns">
-            <p class="intro">I'm Mike, a medical librarian working at <span resource="#mike"><span typeof="Organization" property="worksFor"><span property="name">Karolinska Institutet</span></span></span>. I try to create the best customer experiences possible, both physical and virtual, using humour, friendliness, web technologies and good design.</p>
+            <p class="intro" property="description">I'm Mike, a medical librarian working at <span typeof="Organization" property="worksFor"><span property="name">Karolinska Institutet</span></span>. I try to create the best customer experiences possible, both physical and virtual, using humour, friendliness, web technologies and good design.</p>
           </div>
 
           <div class="four columns">
