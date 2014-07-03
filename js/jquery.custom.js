@@ -42,7 +42,6 @@ $(window).load(function () {
 	var topbarHeight = $('#section-topbar').height() - 1;
 
 	$('body').css('padding-top', topbarHeight);
-	console.log(topbarHeight);
 
 });
 
