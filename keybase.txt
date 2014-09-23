@@ -1,0 +1,65 @@
+
+    ://keybase.io/dermike
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://librarian.codes
+  * I am dermike (https://keybase.io/dermike) on keybase.
+  * I have a public key with fingerprint 4466 4CD4 5218 40E4 97A6  4FBA 1193 8CEC C3D9 9F36
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "44664cd4521840e497a64fba11938cecc3d99f36",
+            "host": "keybase.io",
+            "key_id": "11938cecc3d99f36",
+            "uid": "9603108a52d44c32171066a184fc4f00",
+            "username": "dermike"
+        },
+        "service": {
+            "hostname": "librarian.codes",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411475711,
+    "expire_in": 157680000,
+    "prev": "b223302285fe8653bc938dd70d5f3ae5a89c911b741c96836713f12263b9e77f",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.0.5
+Comment: https://keybase.io/crypto
+
+yMHtAnicbZFdSBRRGIbXNbNWQm2hnwtFp8DITebMzM7PJmVBUrhB0VIS5jY/Z9ZJ
+d2adGU1Rt2hdNqRSg7Iww8qEiFKvLEJSkSLrqkS9iTLCpCz7AWX1ws6I3XVuDuf7
+nvf9vpczsiHR5kiYSX7cnbvZN5nwevBPlc2XXbZchwmaVIt56rByuHLJihqAekhX
+VBPzYBRF05QoUW4CsBQOKY7haUoWeAA4khWhKJISx8kkjbmwMs2wFMhG4A2Yp2io
+hh5+RULV//BVKw2OxkmAs7ybkChKJAnAAJymeTRNFikZxy3QgLrKByGiJagHlXKI
+NbgwVKxWRGitbE1eBSoUQed1hVfzRE2CBlKHdM3URK0CNctMM+SxtGZtyILPQsG/
+auMXFFVCyZGgGuqGoqmYByBSNBXLF1AAUIybAcCFwZqQokO/YhFuhmZxdKwxsBpZ
+CgRBkjhBsG4ZsrSbFESUW5IYXHLLJA/dPMuJHAACQwGRo1mSZgApA4KgSYGDDCNj
+VrBKVcM8JFqTDyBLQwmovFmlo9TDgyVrbAkO29oku/V3Nsf6tH8/6ipOXi6N9cW2
+hbaquzZO/MyyJ809fPG2dKBXbqz8bV/Mj5/8UHI7M9IWrW93HtxhL2hwNL0pSf3R
+Hu5sae3m6vaG0x+MfT89lTLe4Uw/Sl9cuDDTfHN++rp0avJW6XPFG3/KLJGj052O
+Y96r0XDNk/5HsQPm/qnqG4cPzYczialvHyMdPdsrs95fupszNnzOO9icXNxFLS/E
+82sbZz6nfvL1ZJ8YD+acuT9UuCkjsWDC+W5dxDWwr78rlno8a/RXdOeRyDXjV975
+iuG0fl+b/ZWLju2xF+Q/0162zvblfrkTKbpifB3JLGq65/SmzPfNBiJLLdHy4FBG
+vHd34eJkvXJ5y9xf8rATng==
+=4ebY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dermike
+
+==================================================================
