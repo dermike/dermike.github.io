@@ -165,7 +165,7 @@ h5 {
 
 		/* Profile Image (Full background) */
 		#section-profileImage  {
-			background: #222 url('../images/profile_main.jpg') no-repeat center center;
+			background: #222 url('../images/profile_main_speech.jpg') no-repeat center center;
 			background-size: cover;
 			background-position: 10% 0%;
 			height: 440px;
