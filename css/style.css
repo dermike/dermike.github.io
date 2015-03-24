@@ -165,9 +165,9 @@ h5 {
 
 		/* Profile Image (Full background) */
 		#section-profileImage  {
-			background: #222 url('../images/profile_main_speech.jpg') no-repeat center center;
+			background: #222 url('../images/profile_main_light.jpg') no-repeat center center;
 			background-size: cover;
-			background-position: 5% 0%;
+			background-position: 0% 0%;
 			height: 440px;
 		}
 
@@ -177,6 +177,7 @@ h5 {
 				line-height: 26px;
 				margin-top: 180px;
 				text-align: center;
+                text-shadow: #000 1px 1px;
 			}
 
 				#section-profileImage #box-name h2 {
