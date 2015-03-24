@@ -47,6 +47,7 @@ small { font-size: 80%; }
 
 .font-color-primary {
 	color: #993333;
+    text-shadow: none;
 }
 
 .font-color-gray {
@@ -177,7 +178,7 @@ h5 {
 				line-height: 26px;
 				margin-top: 180px;
 				text-align: center;
-                text-shadow: #000 1px 1px;
+                text-shadow: #993399 1px 1px;
 			}
 
 				#section-profileImage #box-name h2 {

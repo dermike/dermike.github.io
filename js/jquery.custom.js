@@ -57,6 +57,10 @@ $(window).resize(function () {
 
 	var nameBoxMargin = ( profileImageHeight - nameBoxHeight ) / 2;
 
+	if (profileImageHeight === 240) {
+		nameBoxMargin += 10;
+	}
+
 	$nameBox.css('margin-top', nameBoxMargin);
 
 });
