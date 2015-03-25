@@ -201,6 +201,7 @@ h5 {
 
 					#section-profileImage #box-name a:hover {
 						color: #993333;
+                        text-shadow: none;
 					}
 
 		/* About */
