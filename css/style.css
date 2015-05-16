@@ -166,7 +166,7 @@ h5 {
 
 		/* Profile Image (Full background) */
 		#section-profileImage  {
-			background: #000033 url('../images/profile_main_light.jpg') no-repeat center center;
+			background: #030221 url('../images/profile_main_light.jpg') no-repeat center center;
 			background-size: cover;
 			background-position: 0% 0%;
 			height: 440px;
