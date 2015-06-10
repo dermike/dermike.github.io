@@ -104,6 +104,8 @@ h5 {
 
 	#topbar-inner {
 		background: #111;
+        background-color: rgba(0,0,0,0.6);
+        -webkit-backdrop-filter: blur(10px);      
 		line-height: 0;
 		text-align: center;
 	}
@@ -145,7 +147,7 @@ h5 {
 	}
 
 		#section-topbar ul#nav a:hover {
-		  background: #222;
+		  background: #222;          
 		  text-decoration: none;
 		}
 
