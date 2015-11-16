@@ -1,6 +1,6 @@
 {
   "name": "librarian.codes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "librarian.codes",
   "main": "gulpfile.js",
   "scripts": {
@@ -22,5 +22,9 @@
     "gulp-concat-css": "^0.1.4",
     "gulp-concat": "^2.2.0",
     "gulp-uglify": "^0.2.1"
+  },
+  "dependencies": {
+    "gumshoe": "cferdinandi/gumshoe",
+    "smooth-scroll": "cferdinandi/smooth-scroll"
   }
 }

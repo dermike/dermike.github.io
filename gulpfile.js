@@ -12,7 +12,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(['js/jquery-1.9.0.js', 'js/bootstrap-scrollspy.js', 'js/jquery.custom.js'])
+  gulp.src(['node_modules/smooth-scroll/dist/js/smooth-scroll.js', 'node_modules/gumshoe/dist/js/gumshoe.js', 'js/custom.js'])
     .pipe(uglify())
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./js'));
