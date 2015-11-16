@@ -21,6 +21,25 @@ $(document).ready(function(){
 	// ScrollSpy automatically updates nav targets based on scroll position
 	// http://twitter.github.com/bootstrap/javascript.html#scrollspy
 	$('#nav').scrollspy();
+  
+  var loadFonts = function() {
+    var h = document.getElementsByTagName('head')[0],
+        pt = document.createElement('link'),
+        os = document.createElement('link');
+    pt.rel = 'stylesheet';
+    pt.href = 'http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic';
+    os.rel = 'stylesheet';
+    os.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700';
+    h.appendChild(pt);
+    h.appendChild(os);
+  };
+  
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) {
+    raf(loadFonts);
+  } else {
+    window.addEventListener('load', loadFonts);
+  }
 	
 });
 
