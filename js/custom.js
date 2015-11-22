@@ -12,7 +12,7 @@ var loadFonts = function() {
       pt = document.createElement('link'),
       os = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = 'css/bundle.css'
+  css.href = 'css/bundle.css';
   pt.rel = 'stylesheet';
   pt.href = 'http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic';
   os.rel = 'stylesheet';
@@ -22,11 +22,16 @@ var loadFonts = function() {
   h.appendChild(os);
 };
 
-var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-if (raf) {
-  raf(loadFonts);
-} else {
-  window.addEventListener('load', loadFonts);
+try {
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+} catch(e) {
+  
+} finally {
+  if (raf) {
+    raf(loadFonts);
+  } else {
+    window.addEventListener('load', loadFonts);
+  }
 }
 
 window.onload = function() {
