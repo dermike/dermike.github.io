@@ -218,6 +218,17 @@ h5 {
 			font: normal 14px/24px 'PT Serif', Georgia, serif;
 		}
 
+        #box-name h2 span {
+            -webkit-transition: color 0.8s;
+            transition: color 0.8s;
+        }
+
+        .coloran {
+            color: #933;
+            -webkit-transition: color 0.4s;
+            transition: color 0.4s;
+        }
+
 			#section-about h3 span.underline {
 				padding-bottom: 3px;
 				border-bottom: 1px solid #fff;
