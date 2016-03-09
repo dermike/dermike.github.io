@@ -140,7 +140,20 @@ h5 {
         padding: 0;
         display: table-cell;
 	  	border-left: 1px solid #222;
+        border-bottom: 1px solid #222;
 	}
+
+    #section-topbar ul#nav > li:first-child {
+        border-left: none;  
+    }
+
+    #section-topbar ul#nav > li.active {
+        border-bottom: 1px solid #006666;
+    }
+
+    #section-topbar ul#nav > li + li.active, #section-topbar ul#nav > li.active + li {
+        border-left: 1px solid #006666;
+    }
 
 
 	#section-topbar ul#nav a {
@@ -172,7 +185,7 @@ h5 {
 
 		/* Profile Image (Full background) */
 		#section-profileImage  {
-			background: #000 url('../images/profile_main_light.jpg') no-repeat center center;
+			background: #000 url('../images/profile_main_star.jpg') no-repeat center center;
 			background-size: cover;
 			background-position: 0% 0%;
 			height: 440px;
