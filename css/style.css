@@ -4,6 +4,7 @@
 
 body {
 	color: #333;
+    padding-top: 54px;
 	background: #000;
 	font: 14px/22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
