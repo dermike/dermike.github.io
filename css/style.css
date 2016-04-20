@@ -186,9 +186,11 @@ h5 {
 
 		/* Profile Image (Full background) */
 		#section-profileImage  {
-			background: #000 url('../images/profile_main_star.jpg') no-repeat center center;
-			background-size: cover;
-			background-position: 0% 0%;
+            background-color: #000;
+			background-image: url('../images/profile_main_star.jpg'), url('../images/profile_main_star_repeat.jpg');
+            background-repeat: no-repeat, repeat-x;
+			background-size: auto 100%;
+			background-position: left center, center;
 			height: 440px;
 		}
 
