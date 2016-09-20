@@ -14,13 +14,14 @@
       h.appendChild(pt);
       h.appendChild(os);
     },
+    getRandom = function(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
     raf,
-    rubrik = document.getElementById('front-header'),
-    text = rubrik.innerHTML,
-    newtext = '',
-    spans,
-    i,
-    current;
+    glitchRate = 3000,
+    rubrik = document.getElementById('front-header');
 
   gumshoe.init({
     'offset': 60
@@ -59,22 +60,15 @@
     nameBox.style.marginTop = nameBoxMargin + 'px';
   });
 
-  for (i = 0; i < text.length; i += 1) {
-    current = text.charAt(i);
-    if (current !== ' ') {
-      newtext += '<span>' + current + '</span>';
-    } else {
-      newtext += ' ';
-    }
+  function addGlitch() {
+    rubrik.classList.add('glitch');
+    setTimeout(function removeGlitch() {
+      rubrik.classList.remove('glitch');
+      glitchRate = getRandom(450, 5000);
+      setTimeout(function runAgain() {
+        addGlitch();
+      }, glitchRate);
+    }, 450);
   }
-  rubrik.innerHTML = newtext;
-  spans = rubrik.querySelectorAll('span');
-  setInterval(function randomLetter() {
-    var random = Math.floor(Math.random() * spans.length),
-      selected = spans[random];
-    selected.classList.add('coloran');
-    setTimeout(function randomLetterEnd() {
-      selected.classList.remove('coloran');
-    }, 500);
-  }, 2500);
+  addGlitch();
 })();
