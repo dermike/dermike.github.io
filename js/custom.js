@@ -14,14 +14,26 @@
       h.appendChild(pt);
       h.appendChild(os);
     },
-    getRandom = function(min, max) {
+    getRandom = function getRandom(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min;
     },
     raf,
     glitchRate = 3000,
-    rubrik = document.getElementById('front-header');
+    rubrik = document.getElementById('front-header'),
+    menuItems = document.querySelectorAll('.menu-item a'),
+    i = 0,
+    menuItemKey = function menuItemKey(e) {
+      if (e.keyCode === 13 || e.keyCode === 32) {
+        var el = document.getElementById(e.target.href.split('#')[1]);
+        el.setAttribute('tabindex', '-1');
+        el.focus();
+        setTimeout(function remove() {
+          el.removeAttribute('tabindex');
+        }, 100);
+      }
+    };
 
   gumshoe.init({
     'offset': 60
@@ -41,6 +53,10 @@
     } else {
       window.addEventListener('load', loadFonts);
     }
+  }
+
+  for (i = 0; i < menuItems.length; i += 1) {
+    menuItems[i].addEventListener('keydown', menuItemKey, false);
   }
 
   window.onload = function onload() {
