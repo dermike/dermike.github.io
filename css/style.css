@@ -468,23 +468,24 @@ h5 {
 				font: normal 14px/24px 'PT Serif', Georgia, serif;
 			}
 
-			span.label {
+			a.label {
 				display: inline-block;
 				color: #ccc;
 				background: #111;
-				padding: 4px 8px;
+				padding: 2px 6px;
 				margin-top: 6px;
 				font: normal 10px/20px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 				text-transform: uppercase;
 				letter-spacing: 1px;
+				border: 2px solid #111;
+				-webkit-transition: none;
+				transition: none;
 			}
 
-			span.label a {
-				color: #ccc;
-			}
-
-			span.label a:hover {
-				color: #993333;
+			a.label:hover, a.label:focus, a.label:active {
+				background: #fff;
+				border-color: #111;
+				color: #111;
 			}
 
 /*---------------------------------------------------
