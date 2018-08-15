@@ -68,7 +68,7 @@ small { font-size: 80%; }
 --------------------------------------------------------------------------*/
 
 a {
-	transition: all 0.2s linear;
+	transition: color 0.2s linear;
 }
 
 img {
