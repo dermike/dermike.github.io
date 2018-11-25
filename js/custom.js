@@ -2,17 +2,13 @@
   var loadFonts = function loadFonts() {
       var h = document.getElementsByTagName('head')[0],
         css = document.createElement('link'),
-        pt = document.createElement('link'),
-        os = document.createElement('link');
+        fonts = document.createElement('link');
       css.rel = 'stylesheet';
       css.href = 'css/bundle.css';
-      pt.rel = 'stylesheet';
-      pt.href = 'https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic';
-      os.rel = 'stylesheet';
-      os.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700';
+      fonts.rel = 'stylesheet';
+      fonts.href = 'css/fonts.css';
       h.appendChild(css);
-      h.appendChild(pt);
-      h.appendChild(os);
+      h.appendChild(fonts);
     },
     getRandom = function getRandom(min, max) {
       min = Math.ceil(min);
