@@ -55,23 +55,6 @@
     menuItems[i].addEventListener('keydown', menuItemKey, false);
   }
 
-  window.onload = function onload() {
-    var topbarHeight = document.getElementById('section-topbar').offsetHeight - 1;
-    document.body.style.paddingTop = topbarHeight + 'px';
-  };
-
-  window.addEventListener('resize', function resize() {
-    var nameBox = document.getElementById('box-name'),
-      nameBoxHeight = nameBox.offsetHeight,
-      profileImageHeight = document.getElementById('section-profileImage').offsetHeight,
-      nameBoxMargin = (profileImageHeight - nameBoxHeight) / 2;
-
-    if (profileImageHeight === 240) {
-      nameBoxMargin += 10;
-    }
-    nameBox.style.marginTop = nameBoxMargin + 'px';
-  });
-
   function addGlitch() {
     rubrik.classList.add('glitch');
     setTimeout(function removeGlitch() {
