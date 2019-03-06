@@ -36,7 +36,10 @@
         	}
 
         	#section-profileImage #box-name {
-        		margin-top: 80px;
+        		margin-top: 125px;
+			}
+        	#section-profileImage #box-name p {
+        		margin-top: 0;
         	}
 
 				#section-profileImage #box-name h1 {
