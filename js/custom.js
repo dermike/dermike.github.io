@@ -65,5 +65,7 @@
       }, glitchRate);
     }, 450);
   }
-  addGlitch();
+  if (!matchMedia('(prefers-reduced-motion)').matches) {
+    addGlitch();
+  }
 })();
