@@ -312,7 +312,7 @@ ul#social img {
 
 .project-list div:first-child {
   width: 100%;
-  min-height: 400px;
+  min-height: 275px;
   align-self: stretch;
   background-repeat: no-repeat;
   background-size: cover;
@@ -321,6 +321,7 @@ ul#social img {
 @media (min-width: 1023px) {
   .project-list div:first-child {
     width: 40%;
+    min-height: 400px;
   }
 }
 
