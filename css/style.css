@@ -244,8 +244,12 @@ ul#social img {
 }
 
 #writing .label {
-  min-width: 100px;
+  min-width: auto;
   margin-bottom: .5rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #669;
 }
 
 .label:hover, .label:active, .label:focus {
