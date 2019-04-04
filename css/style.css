@@ -229,13 +229,13 @@ ul#social img {
 
 .label {
   display: inline-block;
-  color: #ccc;
-  background: #111;
+  color: #fff;
+  background: #669;
   padding: 2px 6px;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 2px solid #111;
+  border: 2px solid #669;
   white-space: nowrap;
   margin-bottom: .1rem;
   min-width: 80px;
@@ -250,8 +250,8 @@ ul#social img {
 
 .label:hover, .label:active, .label:focus {
   background: transparent;
-  border-color: #111;
-  color: #111;
+  border-color: #669;
+  color: #669;
 }
 
 .publication-list li h3 {
