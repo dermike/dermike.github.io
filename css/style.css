@@ -191,26 +191,26 @@ footer div {
   margin: 0 7%;
 }
 
-ul#social {
+footer ul {
   margin: 0;
   white-space: nowrap;
 }
 
-ul#social li {
+footer ul li {
   display: inline-block;
 }
 
-ul#social a {
+footer ul a {
   display: block;
   padding: 30px;
   line-height: 0;
 }
 
-ul#social a:hover {
+footer ul a:hover {
   background-color: #669;
 }
 
-ul#social img {
+footer img {
   width: 24px;
   height: 24px;
 }
