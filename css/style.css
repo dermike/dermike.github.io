@@ -306,7 +306,8 @@ section {
   margin-bottom: 0;
 }
 
-.work-info h4 {
+.work-info h3 {
+  font-size: 1.5rem;
   margin-bottom: 0;
 }
 
