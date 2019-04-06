@@ -24,7 +24,7 @@
   });
 
   smoothScroll.init({
-    'offset': 50
+    'offset': 55
   });
 
   for (i = 0; i < menuItems.length; i += 1) {
