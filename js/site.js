@@ -6,6 +6,7 @@
 
 (function init() {
   var menuItems = document.querySelectorAll('nav a'),
+    pItems = document.querySelectorAll('.project-list li'),
     i = 0,
     menuItemKey = function menuItemKey(e) {
       var el;
@@ -30,4 +31,17 @@
   for (i = 0; i < menuItems.length; i += 1) {
     menuItems[i].addEventListener('keydown', menuItemKey, false);
   }
+
+  Array.prototype.forEach.call(pItems, function(p, i) {
+    var color = parseInt(Math.random() * 2) ?  'red' : 'purple',
+      top = parseInt(Math.random() * 2) ?  'top' : 'bottom',
+      position = ['left', false, 'right', false],
+      bump = position[Math.floor(Math.random() * position.length)],
+      inside = parseInt(Math.random() * 2) ?  'inside' : 'outside';
+    if (i > 0 && i < pItems.length - 1) {
+      if (bump) {
+        p.className = 'bump ' + top + ' ' + bump + ' ' + color + ' ' + inside;
+      }
+    }
+  });
 })();

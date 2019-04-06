@@ -536,7 +536,7 @@ aside:before {
   border-top: 20px solid #669;
 }
 
-.project-list li:last-child:before {
+.project-list li:last-child:before, .bump:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -545,8 +545,52 @@ aside:before {
   border-top: 20px solid #669;
 }
 
+.bump.red:before {
+  border-color: crimson;
+}
+
+.bump.left:before {
+  left: 0;
+  right: initial;
+}
+
+.bump.top:before {
+  top: 0;
+  bottom: initial;
+}
+
+.bump.outside.top:before, .bump.inside.top:before {
+  top: -20px;
+}
+
+.bump.outside.bottom:before, .bump.inside.left.bottom:before {
+  bottom: -20px;
+}
+
+.bump.bottom.left + .bump.top.left:before {
+  left: initial;
+  right: 0;
+}
+
+.bump.bottom.right + .bump.top.right:before {
+  left: 0;
+  right: initial;
+}
+
 @media (min-width: 1023px) {
   .project-list li:last-child:before {
     bottom: -20px;
+  }
+  .bump.bottom.right.inside:not(:nth-child(odd)):before {
+    bottom: -20px;
+  }
+  .bump.bottom.left.inside:not(:nth-child(even)):before {
+    bottom: -20px;
+  }
+  .bump.top.right.inside:not(:nth-child(even)):before {
+    top: 0;
+  }
+  .bump.top.left.inside:not(:nth-child(odd)):before {
+    top: 0;
   }
 }
