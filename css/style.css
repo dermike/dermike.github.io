@@ -513,6 +513,10 @@ section:before, aside:before {
   border-top: 20px solid crimson;
 }
 
+#writing:before {
+  left: initial;
+}
+
 aside:before {
   top: 75px;
   width: 20%;
