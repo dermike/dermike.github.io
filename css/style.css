@@ -161,8 +161,7 @@ nav ul {
   padding: 0;
   border-right: 1px solid #222;
   width: 100%;
-  display: table;
-  table-layout: fixed;
+  display: flex;
 }
 
 nav ul > li {
@@ -171,6 +170,7 @@ nav ul > li {
   display: table-cell;
   border-left: 1px solid #222;
   border-bottom: 1px solid #222;
+  flex: 1 0 0%;
 }
 
 nav ul > li:first-child {
@@ -187,9 +187,8 @@ nav ul > li + li.active, nav ul > li.active + li {
 
 nav ul a {
   display: block;
-  line-height: 18px;
   text-decoration: none;
-  padding: 18px 0;
+  padding: 27px 0;
   color: #fff;
 }
 
