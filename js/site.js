@@ -9,14 +9,19 @@
     pItems = document.querySelectorAll('.project-list li'),
     i = 0,
     menuItemKey = function menuItemKey(e) {
-      var el;
+      var el, elId;
       if (e.keyCode === 13 || e.keyCode === 32) {
-        el = document.getElementById(e.target.href.split('#')[1] + 'h2');
-        el.setAttribute('tabindex', '-1');
-        el.focus();
-        setTimeout(function remove() {
-          el.removeAttribute('tabindex');
-        }, 100);
+        e.preventDefault();
+        elId = e.target.href.split('#')[1];
+        el = document.querySelectorAll('#' + elId + ' h2, #' + elId + ' + main section h1');
+        if (el.length) {
+          el[0].setAttribute('tabindex', '-1');
+          el[0].focus();
+          smoothScroll.animateScroll('#' + elId);
+          setTimeout(function remove() {
+            el[0].removeAttribute('tabindex');
+          }, 100); 
+        }
       }
     };
 
