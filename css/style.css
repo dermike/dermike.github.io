@@ -247,6 +247,7 @@ section {
 #projects {
   background-color: #f1f1f1;
   padding: 0 0 2rem 0;
+  border-top: 1px solid #e1e1e1;
 }
 
 #projects h2 {
@@ -267,6 +268,8 @@ section {
   background-color: #fff;
   min-height: 40vh;
   position: relative;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .project-list li:not(:last-child) {
