@@ -351,7 +351,7 @@ section {
   transition: all .25s;
 }
 
-.label + .label:nth-child(even) {
+.label.highlight {
   color: crimson;
   border-color: crimson;
 }
@@ -362,7 +362,7 @@ section {
   color: #fff;
 }
 
-.label + .label:nth-child(even):hover, .label + .label:nth-child(even):active, .label + .label:nth-child(even):focus {
+.label.highlight:hover, .label.highlight:active, .label.highlight:focus {
   background: crimson;
   border-color: crimson;
   color: #fff;
