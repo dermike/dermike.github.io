@@ -49,4 +49,9 @@
       }
     }
   });
+
+  document.body.classList.add('animate');
+  setTimeout(function remove() {
+    document.body.classList.remove('animate');
+  }, 500);
 })();

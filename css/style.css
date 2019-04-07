@@ -477,7 +477,7 @@ footer img {
   height: 24px;
 }
 
-section:before, aside:before {
+section:before, aside:before, #intro:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -485,6 +485,20 @@ section:before, aside:before {
   right: 0;
   width: 7%;
   border-top: 20px solid crimson;
+}
+
+#intro:after {
+  left: initial;
+  bottom: 25%;
+  border-width: 34px;
+  border-color: #669;
+  transition: all .5s;
+  transition-delay: 1s;
+}
+
+#intro:before {
+  transition: all .5s;
+  transition-delay: 1.2s;
 }
 
 #writing:before {
@@ -496,6 +510,7 @@ aside:before {
   width: 20%;
   border-width: 34px;
   left: initial;
+  transition: all .75s;
 }
 
 @media (min-width: 576px) {
@@ -571,6 +586,11 @@ aside:before {
   .bump.top.left.inside:not(:nth-child(odd)):before {
     top: 0;
   }
+}
+
+body.animate #intro:before, body.animate #intro:after, body.animate aside:before {
+  width: 0;
+  transition: none;
 }
 
 
