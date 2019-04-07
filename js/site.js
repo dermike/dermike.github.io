@@ -19,8 +19,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
       speedAsDuration: true,
       easing: 'easeInOutCubic',
       header: '[data-scroll-header]',
-      updateURL: true,
-      popstate: true
+      updateURL: false
     }),
     menuItemKey = function menuItemKey(e) {
       var el, elId;
