@@ -26,13 +26,13 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
       if (e.keyCode === 13 || e.keyCode === 32) {
         e.preventDefault();
         elId = e.target.href.split('#')[1];
-        el = document.querySelectorAll('#' + elId + ' h2, #' + elId + ' + main section h1');
-        if (el.length) {
-          el[0].setAttribute('tabindex', '-1');
-          el[0].focus();
-          scroll.animateScroll(el[0].parentElement);
+        el = document.querySelector('#' + elId + ' h2, #' + elId + ' + main section h1');
+        if (el) {
+          el.setAttribute('tabindex', '-1');
+          el.focus();
+          scroll.animateScroll(el.parentElement.tagName !== 'SECTION' ? document.querySelector('#intro') : el.parentElement);
           setTimeout(function remove() {
-            el[0].removeAttribute('tabindex');
+            el.removeAttribute('tabindex');
           }, 100); 
         }
       }
