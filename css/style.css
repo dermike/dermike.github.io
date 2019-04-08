@@ -120,6 +120,7 @@ aside {
   background-repeat: no-repeat;
   height: 400px;
   position: relative;
+  transition: opacity 1s;
 }
 
 @media (min-width: 576px) {
@@ -493,12 +494,12 @@ section:before, aside:before, #intro:after {
   border-width: 34px;
   border-color: #669;
   transition: all .5s;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 #intro:before {
   transition: all .5s;
-  transition-delay: 1.2s;
+  transition-delay: 2.2s;
 }
 
 #writing:before {
@@ -511,6 +512,7 @@ aside:before {
   border-width: 34px;
   left: initial;
   transition: all .75s;
+  transition-delay: 1s;
 }
 
 @media (min-width: 576px) {
@@ -590,6 +592,11 @@ aside:before {
 
 body.animate #intro:before, body.animate #intro:after, body.animate aside:before {
   width: 0;
+  transition: none;
+}
+
+body.animate aside {
+  opacity: 0;
   transition: none;
 }
 

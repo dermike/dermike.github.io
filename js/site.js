@@ -36,7 +36,8 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
           }, 100); 
         }
       }
-    };
+    },
+    titleImage;
 
   for (i = 0; i < menuItems.length; i += 1) {
     menuItems[i].addEventListener('keydown', menuItemKey, false);
@@ -56,7 +57,10 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
   });
 
   document.body.classList.add('animate');
-  setTimeout(function remove() {
+  titleImage = new Image();
+  titleImage.onload = function() {
     document.body.classList.remove('animate');
-  }, 500);
+    titleImage = null;
+  };
+  titleImage.src = 'images/profile_big.jpg';
 })();
