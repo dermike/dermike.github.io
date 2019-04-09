@@ -429,12 +429,11 @@ section {
 
 footer {
   background-color: #111;
+  overflow: hidden;
 }
 
 footer a {
   color: #fff;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 footer div {
