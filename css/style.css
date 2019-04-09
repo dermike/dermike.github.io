@@ -273,7 +273,6 @@ section {
   align-items: flex-start;
   flex-wrap: wrap;
   background-color: #fff;
-  min-height: 40vh;
   position: relative;
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
