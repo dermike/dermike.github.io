@@ -16,11 +16,11 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
       }
     }),
     scroll = new SmoothScroll('nav a', {
-      speed: 750,
-      speedAsDuration: true,
-      easing: 'easeInOutCubic',
-      header: '[data-scroll-header]',
-      updateURL: false
+      'speed': 750,
+      'speedAsDuration': true,
+      'easing': 'easeInOutCubic',
+      'header': '[data-scroll-header]',
+      'updateURL': false
     }),
     menuItemKey = function menuItemKey(e) {
       var el, elId;
@@ -57,7 +57,6 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
     }
   });
 
-  document.body.classList.add('animate');
   titleImage = new Image();
   titleImage.onload = function() {
     document.body.classList.remove('animate');
@@ -101,7 +100,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
     switchItem.addEventListener('click', toggleDarkMode, false);
     switchItem.addEventListener('keydown', toggleDarkModeKey, false);
     if (localStorage && localStorage.getItem('prefers-darkmode')) {
-      switchItem.click();
+      switchItem.classList.add('enabled');
     }
   }
 })();
