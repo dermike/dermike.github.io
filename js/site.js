@@ -67,9 +67,9 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
   if (!nativeDarkMode) {
     var switchItem = document.createElement('a'),
       darkModeStyle = document.querySelector('#darkmode'),
-      toggleDarkMode = function(e) {
+      toggleDarkMode = function(e, setDark) {
         e.preventDefault();
-        if (!switchItem.classList.contains('enabled')) {
+        if (!switchItem.classList.contains('enabled') || setDark) {
           switchItem.classList.add('enabled');
           switchItem.setAttribute('aria-pressed', 'true');
           darkModeStyle.setAttribute('media', 'all');
@@ -90,7 +90,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
           toggleDarkMode(e);
         }
       },
-      intro = document.querySelector('#intro');
+      intro = document.querySelector('#intro > div');
     switchItem.id = 'darkmode-switch';
     switchItem.href = '#';
     switchItem.setAttribute('aria-label', 'Use dark mode');
@@ -101,6 +101,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
     switchItem.addEventListener('keydown', toggleDarkModeKey, false);
     if (localStorage && localStorage.getItem('prefers-darkmode')) {
       switchItem.classList.add('enabled');
+      switchItem.setAttribute('aria-pressed', 'true');
     }
   }
 })();
