@@ -257,7 +257,6 @@ section {
     padding-top: 55px;
   }
   #intro {
-    height: calc(100vh - 55px);
     min-height: calc(100vh - 55px);
     display: flex;
     flex-direction: column;
