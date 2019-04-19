@@ -27,7 +27,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
       if (e.keyCode === 13 || e.keyCode === 32) {
         e.preventDefault();
         elId = e.target.href.split('#')[1];
-        el = document.querySelector('#' + elId + ' h2, #' + elId + ' + main section h1');
+        el = document.querySelector('#' + elId + ' h1, #' + elId + ' h2');
         if (el) {
           el.setAttribute('tabindex', '-1');
           el.focus();
