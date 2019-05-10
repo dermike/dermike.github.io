@@ -419,7 +419,7 @@ section {
   min-width: 100%;
 }
 
-.publication-list div {
+.publication-list header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
