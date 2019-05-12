@@ -334,7 +334,7 @@ section {
 }
 
 .project-list .work-info {
-  margin: 5%;
+  margin: 5% 7%;
   flex: 1 0 0%;
   display: flex;
   justify-content: center;
