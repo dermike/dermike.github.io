@@ -512,7 +512,7 @@ section:before, aside:before, #intro:after {
 aside:before {
   top: 75px;
   width: 20%;
-  border-width: 3rem;
+  border-width: 2.75rem;
   left: auto;
   transition: all .75s;
   transition-delay: 1s;
