@@ -110,7 +110,7 @@ aside {
 }
 
 main, footer {
-  float: right;
+  margin-left: auto;
   position: relative;
 }
 
