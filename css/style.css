@@ -82,10 +82,10 @@ main, aside, footer {
 
 @media (min-width: 576px) {
   main, aside {
-    width: 40%;
+    width: 38%;
   }
   main, footer {
-    width: 60%;
+    width: 62%;
   }
 }
 
@@ -127,7 +127,7 @@ nav {
 
 @media (min-width: 576px) {
   nav {
-    width: 60%;
+    width: 62%;
   }
 }
 
