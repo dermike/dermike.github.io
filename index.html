@@ -24,14 +24,10 @@
     <meta name="msapplication-TileColor" content="#111">
     <meta name="theme-color" content="#111">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(prefers-color-scheme: dark)" id="darkmode" href="css/darkmode.css">
   </head>
   <body id="intro-scroll">
     <script>
       document.body.classList.add('animate');
-      if (!matchMedia('(prefers-color-scheme)').matches && localStorage && localStorage.getItem('prefers-darkmode')) {
-        document.querySelector('#darkmode').setAttribute('media', 'all');
-      }
     </script>
     <aside></aside>
     <main>

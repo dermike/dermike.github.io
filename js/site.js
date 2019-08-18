@@ -9,7 +9,6 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
   var menuItems = document.querySelectorAll('nav a'),
     pItems = document.querySelectorAll('.project-list li'),
     i = 0,
-    nativeDarkMode = matchMedia('(prefers-color-scheme)').matches,
     spy = new Gumshoe('nav a', {
       offset: function () {
         return document.querySelector('nav').getBoundingClientRect().height;
@@ -63,45 +62,4 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
     titleImage = null;
   };
   titleImage.src = 'images/profile_big.jpg';
-
-  if (!nativeDarkMode) {
-    var switchItem = document.createElement('a'),
-      darkModeStyle = document.querySelector('#darkmode'),
-      toggleDarkMode = function(e, setDark) {
-        e.preventDefault();
-        if (!switchItem.classList.contains('enabled') || setDark) {
-          switchItem.classList.add('enabled');
-          switchItem.setAttribute('aria-pressed', 'true');
-          darkModeStyle.setAttribute('media', 'all');
-          if (localStorage) {
-            localStorage.setItem('prefers-darkmode', true);
-          }
-        } else {
-          switchItem.classList.remove('enabled');
-          switchItem.setAttribute('aria-pressed', 'false');
-          darkModeStyle.setAttribute('media', '(prefers-color-scheme: dark)');
-          if (localStorage) {
-            localStorage.removeItem('prefers-darkmode');
-          }
-        }
-      },
-      toggleDarkModeKey = function(e) {
-        if (e.keyCode === 32) {
-          toggleDarkMode(e);
-        }
-      },
-      intro = document.querySelector('#intro > div');
-    switchItem.id = 'darkmode-switch';
-    switchItem.href = '#';
-    switchItem.setAttribute('aria-label', 'Use dark mode');
-    switchItem.setAttribute('role', 'button');
-    switchItem.setAttribute('aria-pressed', 'false');
-    intro.insertBefore(switchItem, intro.childNodes[0]);
-    switchItem.addEventListener('click', toggleDarkMode, false);
-    switchItem.addEventListener('keydown', toggleDarkModeKey, false);
-    if (localStorage && localStorage.getItem('prefers-darkmode')) {
-      switchItem.classList.add('enabled');
-      switchItem.setAttribute('aria-pressed', 'true');
-    }
-  }
 })();
