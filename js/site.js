@@ -61,5 +61,5 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
     document.body.classList.remove('animate');
     titleImage = null;
   };
-  titleImage.src = 'images/profile_big.jpg';
+  titleImage.src = 'images/profile_big2.jpg';
 })();
