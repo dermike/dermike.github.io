@@ -44,7 +44,7 @@ Element.prototype.closest||(Element.prototype.matches||(Element.prototype.matche
   }
 
   Array.prototype.forEach.call(pItems, function(p, i) {
-    var color = parseInt(Math.random() * 2) ?  'red' : 'purple',
+    var color = parseInt(Math.random() * 2) ?  'odd' : 'even',
       top = parseInt(Math.random() * 2) ?  'top' : 'bottom',
       position = ['left', false, 'right', false],
       bump = position[Math.floor(Math.random() * position.length)],

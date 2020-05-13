@@ -526,7 +526,7 @@ aside:before {
   border-top: 1.25rem solid #70AE6E;
 }
 
-.bump.red:before {
+.bump.odd:before {
   border-color: #EAB464;
 }
 
