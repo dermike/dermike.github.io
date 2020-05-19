@@ -148,8 +148,8 @@ nav ul {
 nav ul > li {
   display: block;
   padding: 0;
-  border-left: 0.0625rem solid #222;
-  border-bottom: 0.0625rem solid #222;
+  border-left: 1px solid #222;
+  border-bottom: 1px solid #222;
   flex: 1 0 0%;
 }
 
@@ -158,11 +158,11 @@ nav ul > li:first-child {
 }
 
 nav ul > li.active {
-  border-bottom: 0.0625rem solid #648767;
+  border-bottom: 1px solid #648767;
 }
 
 nav ul > li + li.active, nav ul > li.active + li {
-  border-left: 0.0625rem solid #648767;
+  border-left: 1px solid #648767;
 }
 
 nav ul a {
